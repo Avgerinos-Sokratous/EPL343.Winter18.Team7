@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return authorizeForm()" method="post">
+Name: <input type="text" name="uname">
+<br>
+Surname: <input type="text" name="Sname">
+<input type="submit" value="Submit">
+</form>
+<script>
+
+function authorizeForm() {
+	var Username =document.forms["myForm"]["uname"].value;
+    var Name = document.forms["myForm"]["Sname"].value;
+    //var Surname = document.forms["myForm"]["Sname"].value;
+    //var Email = document.forms["myForm"]["email"].value;
+    //var Telephone =  document.forms["myForm"]["telephone"].value;
+   // var Password = document.forms["myForm"]["password"].value;
+    //var CPassword = document.forms["myForm"]["cpassword"].value;
+   
+   if (findname(Username)) {
+        alert("Name must be filled out");
+        return false;
+    }
+return true;    
+}
+function findname(un){
+
+}
+
+</script>
+
+</body>
+</html>
