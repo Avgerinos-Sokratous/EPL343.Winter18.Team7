@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form name="myForm" action="/action_page.php"
+<form name="myForm" 
 onsubmit="return authorizeForm()" method="post">
 Name: <input type="text" name="uname">
 <br>
@@ -24,23 +24,23 @@ function authorizeForm() {
     //var Telephone =  document.forms["myForm"]["telephone"].value;
    //var Password = document.forms["myForm"]["password"].value;
     //var CPassword = document.forms["myForm"]["cpassword"].value;
-   
-   if (findname(Username)) {
-        alert("Username already in use");
-        return false;
-    }
+   var success=new Boolean(1);
+   if(!findname(Username)){success= Booelan(0);}
   
-  localStorage.setItem(Username, Password);
-  localStorage.setItem("Email"+Username, Email);
-  localStorage.setItem("Name"+Username, Name);
-  localStorage.setItem("Surname"+Username, Surname);
-  localStorage.setItem("Telephone"+Username, Telephone);
-  
+ localStorage.setItem(Username, Name);
+  //localStorage.setItem("Email"+Username, Email);
+  localStorage.setItem('Name+${Username}', Name);
+  //localStorage.setItem("Surname"+${Username}, Surname);
+  //localStorage.setItem("Telephone"+${Username}, Telephone);
+  if(success){alert("You have Succesfully Registered");}
     
 }
 function findname(un){
-	return(localStorage.getItem(un)!= null);
-
+	if(localStorage.getItem(un)!= null){
+alert("Username already in use");
+return false;
+}
+return true;
 }
 
 </script>
