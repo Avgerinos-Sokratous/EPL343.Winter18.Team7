@@ -21,7 +21,7 @@ label{
 
 form {
 	background-color: #eee;
-	width: 40%;
+	width: 50%;
 	font-size: 16px;
 	
 }
@@ -33,12 +33,12 @@ input[type=text],input[type=email], input[type=password], input[type=number] {
     margin: 2px 0;
 }
 
-input[type=submit], input[type=reset]{
+button[type=submit], button[type=reset]{
 	font-size: 16px;
-	border-color: #e7e7e7;
+	
 	color: black;
 	top: 50%;
     left: 50%;
-    border: solid;
-    border-radius: 10px;
+    border-color: #a2a2c3;
+    border-radius: 25px;
 }
