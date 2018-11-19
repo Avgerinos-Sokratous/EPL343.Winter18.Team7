@@ -1,0 +1,48 @@
+label{
+	 margin: 3px 30px;
+	 font-size: 14px;
+}
+
+form[name="loginform"]{
+	background-color: #F2E4D2;
+	width: 20%;
+	font-family: "Georgia";
+	font-size: 17px;
+	padding: 4px 8px;
+}
+
+form[name="signupform"]{
+	background-color: #F2E4D2;
+	width: 20%;
+	font-family: "Times New Roman";
+	font-size: 14px;
+	padding: 4px 8px;
+}
+
+
+input[type=text],input[type=password] {
+	width: 30%;
+	font-family: "Times New Roman";
+	padding: 2px 2px;
+    	margin: 6px;
+}
+
+button[value="Login"]{
+	font-size: 20px;
+	font-family: "Verdana Black";
+	color: black;
+	border-radius: 100px;
+	background-color: #FFFFE0;
+	border-color: #FA951A;
+	margin:8px 55px;
+	width: 45%;
+
+}
+
+button[value="Sign Up"]{
+	font-size: 14px;
+	color: black;
+	background-color: #FFFFE0;
+	font-family: "Emblema One";
+	border-color: #2F4F4F;
+}
