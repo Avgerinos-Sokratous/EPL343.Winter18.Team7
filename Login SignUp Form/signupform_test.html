@@ -1,40 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="test1.css" type="text/css" />
+		<title>Sign Up</title>
+		<script type="text/javascript" src="functions_signup.js"></script>
+		<link rel="stylesheet" href="test_signup.css" type="text/css" />
 	</head>
 
-<body>
-	<h1> </h1>
-	<h2> Sign-up Form</h2>
-	<h4> Please fill out the following form: </h4>
-
-	<form name="signupform" action="/action_page.php" >
-		<br />
-		Username:* <input type="text" username="username" maxlength="20" required /> <br />
-		<br />
-		First Name:* <input type="text" name="fname" maxlength="20" required /> <br />
-		<br />
-		Last Name:* <input type="text" surname="lname" maxlength="30" required /> <br />
-		<br />
-		Email: <input type="email" name="email" /> <br />
-		<br />
-		Telephone:* <input type="number" name="telephone" required /> <br />
-		<br />
-		Password:* <input type="password" name="psw" minlength="8" maxlength="30" required/> 
-			<label for="psw">
+	<body>
+		<h1> </h1>
+		<h2> Sign-up Form</h2>
+		<h4> Please fill out the following form: </h4>
+	
+		<form name="signupform" onsubmit="return checkPassword(this)">
+			<br />
+			<label for="username">Username:*
+				<input type="text" name="username" maxlength="20" required /> <br />
+			</label>
+			
+			<br />
+			<label for="fname">First Name:*
+				<input type="text" name="fname" maxlength="20" required /> <br />
+			</label>
+			
+			<br />
+			<label for="lname"> Last Name:*
+				<input type="text" name="lname" maxlength="30" required /> <br />
+			</label>
+			
+			<br />
+			<label for="email">Email: 
+				<input type="email" name="email" /> <br />
+			</label>
+			
+			<br />
+			<label for="telephone">Telephone:* 
+				<input type="number" name="telephone" min="0" required/> <br />
+			</label>
+			
+			<br />
+			<label for="password">Password:*
+				<input type="password" name="password" minlength="8" maxlength="30" required/>
 				<strong> Password must be at least 8 characters, including letters and numbers! </strong> 
 			</label> <br />
-		<br />
-		Confirm password: <input type="password" min="8" maxlength="30" required /> <br />
-		<br />
-		<label>
-			<input type="checkbox" name="agree"/> I have read and agree to the Terms and Conditions and Privacy Policy <br />
-    	</label>
-    	<br />
-		<input type="submit" value="Submit">
-		<input type="reset" value="Reset">
-	</form>
-
-</body>
+			
+			<br />
+			<label for="password_confirm">Confirm password: 
+				<input type="password" name="password_confirm" minlength="8" maxlength="30" required /> <br />
+			</label>
+			
+			<br />
+			<label for="agree">
+				<input type="checkbox" name="agree" required/> I have read and agree to the Terms and Conditions and Privacy Policy <br />
+	    	</label>
+	    	
+	    	<br />
+			<button type="submit" value="Submit"> Submit </button>
+			<button type="reset" value="Reset"> Reset </button>
+			
+		</form>
+	
+	</body>
 </html>
