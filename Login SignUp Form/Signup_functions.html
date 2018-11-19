@@ -47,10 +47,10 @@ function authorizeForm() {
    if(!findname(Username)){success= Booelan(0);}
   
  localStorage.setItem(Username, Password);
-  //localStorage.setItem("Email"+Username, Email);
-  //localStorage.setItem("Name"+${Username}, Name);
-  //localStorage.setItem("Surname"+${Username}, Surname);
-  //localStorage.setItem("Telephone"+${Username}, Telephone);
+  localStorage.setItem("Email"+Username, Email);
+  localStorage.setItem("Name"+Username, Name);
+  localStorage.setItem("Surname"+Username, Surname);
+  localStorage.setItem("Telephone"+Username, Telephone);
   if(success){alert("You have succesfully registered!!!");}
     
 }
