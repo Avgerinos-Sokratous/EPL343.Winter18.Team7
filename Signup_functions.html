@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8">
+<title>&#x270D Sign Up Form &#x270D </title>
+
+
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return authorizeForm()" method="post">
+Name: <input type="text" name="uname">
+<br>
+Surname: <input type="text" name="Sname">
+<input type="submit" value="Submit">
+</form>
+<script>
+
+function authorizeForm() {
+	var Username =document.forms["myForm"]["uname"].value;
+    var Name = document.forms["myForm"]["Sname"].value;
+    //var Surname = document.forms["myForm"]["Sname"].value;
+    //var Email = document.forms["myForm"]["email"].value;
+    //var Telephone =  document.forms["myForm"]["telephone"].value;
+   //var Password = document.forms["myForm"]["password"].value;
+    //var CPassword = document.forms["myForm"]["cpassword"].value;
+   
+   if (findname(Username)) {
+        alert("Username already in use");
+        return false;
+    }
+  
+  localStorage.setItem(Username, Password);
+  localStorage.setItem("Email"+Username, Email);
+  localStorage.setItem("Name"+Username, Name);
+  localStorage.setItem("Surname"+Username, Surname);
+  localStorage.setItem("Telephone"+Username, Telephone);
+  
+    
+}
+function findname(un){
+	return(localStorage.getItem(un)!= null);
+
+}
+
+</script>
+
+</body>
+</html>
