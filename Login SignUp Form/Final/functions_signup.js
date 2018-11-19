@@ -23,7 +23,10 @@ function authorizeForm(form0) {
     var CPassword = document.forms["signupform"]["password_confirm"].value;
    var success=new Boolean(1);
    if(!findname(Username)){success= Boolean(0);}
-checkPassword(form0);
+if(!checkPassword(form0)){
+	
+	success= Boolean(0);
+}
  localStorage.setItem(Username, Password);
   localStorage.setItem("Email"+Username, Email);
   localStorage.setItem("Name"+Username, Name);
