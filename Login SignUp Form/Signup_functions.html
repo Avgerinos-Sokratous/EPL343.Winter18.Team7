@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head><meta charset="utf-8">
+<title>&#x270D Sign Up Form &#x270D </title>
+
 
 </head>
 <body>
@@ -20,16 +22,24 @@ function authorizeForm() {
     //var Surname = document.forms["myForm"]["Sname"].value;
     //var Email = document.forms["myForm"]["email"].value;
     //var Telephone =  document.forms["myForm"]["telephone"].value;
-   // var Password = document.forms["myForm"]["password"].value;
+   //var Password = document.forms["myForm"]["password"].value;
     //var CPassword = document.forms["myForm"]["cpassword"].value;
    
    if (findname(Username)) {
         alert("Username already in use");
         return false;
     }
-return true;    
+  
+  localStorage.setItem(Username, Password);
+  localStorage.setItem("Email"+Username, Email);
+  localStorage.setItem("Name"+Username, Name);
+  localStorage.setItem("Surname"+Username, Surname);
+  localStorage.setItem("Telephone"+Username, Telephone);
+  
+    
 }
 function findname(un){
+	return(localStorage.getItem(un)!= null);
 
 }
 
