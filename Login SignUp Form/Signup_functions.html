@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<form name="myForm" 
+<form name="signupform" 
 onsubmit="return authorizeForm()" method="post">
 Name: <input type="text" name="uname">
 <br>
@@ -17,8 +17,8 @@ Surname: <input type="text" name="Sname">
 <script>
 
 function authorizeForm() {
-	var Username =document.forms["myForm"]["uname"].value;
-    var Name = document.forms["myForm"]["Sname"].value;
+	var Username =document.forms["signupform"]["uname"].value;
+    var Name = document.forms["signupform"]["Sname"].value;
     //var Surname = document.forms["myForm"]["Sname"].value;
     //var Email = document.forms["myForm"]["email"].value;
     //var Telephone =  document.forms["myForm"]["telephone"].value;
@@ -32,7 +32,7 @@ function authorizeForm() {
   localStorage.setItem('Name+${Username}', Name);
   //localStorage.setItem("Surname"+${Username}, Surname);
   //localStorage.setItem("Telephone"+${Username}, Telephone);
-  if(success){alert("You have Succesfully Registered");}
+  if(success){alert("You have succesfully registered!!!");}
     
 }
 function findname(un){
