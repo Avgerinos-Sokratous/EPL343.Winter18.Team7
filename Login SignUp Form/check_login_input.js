@@ -1,5 +1,5 @@
 /**
- * @author mandre29
+ * @authors mandre29 akikas01
  */
 
 function checkInput(form){
@@ -8,7 +8,7 @@ function checkInput(form){
 
 	if(!checkNamePassword(username, password)){
 		success= Boolean(0);
-	}
+	}else{goToPage();}
 }
 
 function checkNamePassword(username, password){
@@ -27,3 +27,19 @@ function checkNamePassword(username, password){
 	}
 		
 }
+function goToPage(){
+  	var Username =document.forms["loginform"]["username"].value;
+  	var Passsword =document.forms["loginform"]["password"].value;
+  	var type=localStorage.getItem("Type"+Username);
+  	
+  	if(type==null){
+  		
+  		window.open("Customer.html");
+  		
+  	}else{
+  		window.open("Employee.html");
+  		
+  		
+  	}
+  	
+  }
