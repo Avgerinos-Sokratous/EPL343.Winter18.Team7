@@ -21,19 +21,21 @@ function goToPage(form){
 
 function checkInput(form){
 	
-  	
+  	var success= new Boolean(1);
 	var username = form.username.value;
 	var password= form.password.value;
 
 	if(!checkNamePassword(username, password)){	
-		goToPage(form);
+		success= Boolean(0);
+		
 	}
+	if(success){goToPage(form);}
 }
 
 function checkNamePassword(username, password){
 	if(localStorage.getItem(username)== null){
 			alert('Username does not exist!');
-			return false;
+			return false; 
 	}
 	for (var i = 0; i < localStorage.length; i++) {
     	var key = localStorage.key(i);
@@ -41,8 +43,8 @@ function checkNamePassword(username, password){
 
 		if(key == username && value != password){
 			alert('Password does not match with this username!');
-			return false;
+			return false; 
 		}
 	}
-		
+	return true;	
 }
