@@ -20,14 +20,15 @@ function goToPage(form){
 }
 
 function checkInput(form){
-	
-  	
+	var success= new Boolean(1);
 	var username = form.username.value;
 	var password= form.password.value;
 
 	if(!checkNamePassword(username, password)){	
-		goToPage(form);
+		success= Boolean(0);
+		
 	}
+	if(success){goToPage(form);}
 }
 
 function checkNamePassword(username, password){
