@@ -45,5 +45,5 @@ function checkNamePassword(username, password){
 			return false;
 		}
 	}
-		
+	return true;	
 }
