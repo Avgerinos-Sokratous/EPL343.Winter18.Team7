@@ -17,7 +17,7 @@ else{
 }
   }
   function Manager(){ 
-  	localStorage.clear();
+  	
   	localStorage.setItem("Manager", "12345678");
   	localStorage.setItem("EmailManager","manager@cs.ucy.ac.cy");
   localStorage.setItem("NameManager", "Anonymous");

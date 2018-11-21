@@ -1,14 +1,33 @@
 /**
- * @authors mandre29 akikas01
+ * @author mandre29
  */
+function goToPage(form){ 
+        var Username =form.username.value;
+        var Passsword =form.password.value;
+        var type=localStorage.getItem("Type"+Username);
+       
+        if(type==null){
+  			window.open("Customer.html");
+    	}
+    	else{
+    		if(type=='E'){
+  			   window.open("Employee.html");
+  			}
+   			else{
+ 			   window.open("Manager.html");
+        	}
+   		}
+}
 
 function checkInput(form){
+	
+  	
 	var username = form.username.value;
 	var password= form.password.value;
 
-	if(!checkNamePassword(username, password)){
-		success= Boolean(0);
-	}else{goToPage();}
+	if(!checkNamePassword(username, password)){	
+		goToPage(form);
+	}
 }
 
 function checkNamePassword(username, password){
@@ -27,19 +46,3 @@ function checkNamePassword(username, password){
 	}
 		
 }
-function goToPage(){
-  	var Username =document.forms["loginform"]["username"].value;
-  	var Passsword =document.forms["loginform"]["password"].value;
-  	var type=localStorage.getItem("Type"+Username);
-  	
-  	if(type==null){
-  		
-  		window.open("Customer.html");
-  		
-  	}else{
-  		window.open("Employee.html");
-  		
-  		
-  	}
-  	
-  }
