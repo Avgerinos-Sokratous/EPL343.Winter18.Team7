@@ -1,0 +1,11 @@
+button[value="log_out"]{
+	font-size: 14px;
+	font-family: "Verdana Black";
+	color: black;
+	border-radius: 20px;
+	background-color: #DFD3DA;
+	border-color: #A25884;
+	margin:0% 90%;
+	width: 6%;
+	text-align: center;
+}
