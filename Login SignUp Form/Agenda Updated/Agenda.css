@@ -1,0 +1,34 @@
+body {
+	background-color:#F5DEB3;
+}
+
+.list0 {
+	margin-top: 50px;
+	width: 900px;	
+	margin-left: 0px;
+  	margin-right: 80px
+}
+
+li {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	:before {
+  	  display: block;
+	  position: absolute;
+	  top: 0;
+  	  left: 0;
+	  content: "";
+	  font-size: .75em;
+  	}
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+}
