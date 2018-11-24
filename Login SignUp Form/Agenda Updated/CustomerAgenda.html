@@ -1,13 +1,13 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>&#xF4C5 Agenda &#xF4C5</title>
+		<title>&#x1F4C5 Agenda &#x1F4C5</title>
 		<link rel="stylesheet" href="Agenda.css" type="text/css" />
 	</head>
 
 	
 	<body>
-		<h1 style="font-family:helvetica; color:blue;"><marquee>&#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6 Agenda &#xF4C6</marquee></h1>
+		<h1 style="font-family:helvetica; color:blue;"><marquee behavior="slide" direction="left">&#x1F4C6 Agenda &#x1F4C6</marquee></h1>
 
 		<ul id="appt_list" >Appointments: </ul>
 		<button onClick="newAppt()">New Appointment</button>
@@ -20,7 +20,7 @@ function newAppt() {
 	var myList = document.getElementById('appt_list');
 	var entry = document.createElement('li');
 
-	entry.innerHTML = '<li id="list" class="emoji">'+ (id)+ ') Schedule your appointment:  &#x23F1 Time: <input type="time" name="appt_time"> &#x1F4C6 Date:<input type="date" name="appt_date"> &#x1F4D3 Description: <input type="text" name="appt_descr"></li>';
+	entry.innerHTML = '<div class="list0"><li id="list" class="emoji">'+ (id)+ ') Schedule your appointment:  &#x23F1 Time: <input type="time" name="appt_time"> &#x1F4C6 Date:<input type="date" name="appt_date"> &#x1F4D3 Description: <input type="text" name="appt_descr"></li></div>';
 
 	id+=1;
 	myList.appendChild(entry);
