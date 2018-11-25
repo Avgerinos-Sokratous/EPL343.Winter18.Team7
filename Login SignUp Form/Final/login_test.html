@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="css_login.css" type="text/css" />
-		
-		<script type="text/javascript" src="check_login_input.js"></script>
+	   <link rel="stylesheet" href="css_login.css" type="text/css" />
+	   <script type="text/javascript" src="check_login_input.js"></script>
 	</head>
-
 	<body>
-		<form name="loginform"   onsubmit="checkInput(this)">
-		<br />
+	   <form name="loginform" onsubmit="checkInput(this)"> <br />
 		<label for="username">Username: 
 			<input type="text" name="username" maxlength="20" required /> <br />
 		</label>
@@ -16,14 +13,12 @@
 		<label for="password">Password:
 			<input type="password" name="password" minlength="8" maxlength="30" required/> <br />
 		</label>
-		
 		<button type="submit" value="Login"> Login </button>		
-	</form>
+	   </form>
 
-	<form name="signupform" action="FINAL_Signup_form.html">
+	   <form name="signupform" action="FINAL_Signup_form.html">
 		<i> If you don’t have an account:</i>
 		<button type="submit" value="Sign Up"> Sign Up </button>
-	</form>
-	
+	   </form>
 	</body>
 </html>
