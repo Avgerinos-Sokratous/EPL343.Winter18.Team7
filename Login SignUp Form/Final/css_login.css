@@ -19,7 +19,6 @@ form[name="signupform"]{
 	padding: 4px 8px;
 }
 
-
 input[type=text],input[type=password] {
 	width: 30%;
 	font-family: "Times New Roman";
@@ -36,7 +35,6 @@ button[value="Login"]{
 	border-color: #FA951A;
 	margin:8px 55px;
 	width: 45%;
-
 }
 
 button[value="Sign Up"]{
