@@ -2,13 +2,21 @@
 <html>
 	<head>
 		
-		<title>Contract Page</title>
-		<meta name="author" content="your name" />
-		<meta name="description" content="" />
-		<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
-		<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->
+		
 	</head>
-	<body>
+	<head lang="en">
+    <title>Contract Page</title>
+  <meta charset="UTF-8">
+  <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }
+  </script>
+
+  </head>
+    <body>
 		<!-- webpage content goes here in the body -->
 		<div id="page">
 			<div id="ConPer">
@@ -188,12 +196,19 @@ Date of completion: According to Master Contractor schedule (In case of late com
   
   <tr>
     <td>Date</td>
-    <td><input type="text" id="Date" name="ContractDate"value=""></td>
+	<br>
+    <td><input type="date" id="Date" name="ContractDate" value=""></td>
+	</br>
   </tr>
   
 </table>
+
+
+ <input type="submit" value="Submit" onclick="showInput();"><br/>
  
- <p><input type="submit" value="Submit"></p>
+  <p><span id='display'></span></p>
+  
+ <!--  <p><input type="submit" value="Submit"></p> -->
  
 </form>
 
