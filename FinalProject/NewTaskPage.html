@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf=8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SOCRATOUS</title>
+	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Monoton|Raleway" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+</head>
+	
+<body>
+	<h1>Dear Manager</h1>
+	<ul>
+		<li><a href="manAgenda.html">Agenda</a></li>
+		<li><a href="ManagerContractPage.html">Contract</a></li>
+		<li><a href="ManagerTasksPage.html">Tasks</a></li>
+		<li><a href="index.html">Log Out</a></li>
+	</ul>
+		<div>
+			<div id="TaskPer">
+				<h2><strong>Tasks Perspective</strong></h2>
+			</div>
+			<div id="Tasknav">
+				<ul>
+                    <li class="TaskCaledar">
+                    	<a href="/">Caledar</a>
+					</li>
+                    
+					<li class="TaskLog-out">
+						<a href="/">Log Out</a>
+				</ul>
+					</li>
+			</div>
+			<div id="TaskContent">
+				<h2>New Task</h2>
+				<form>
+				<p>
+					<td><input type="text" id="TskAss" name="TaskAssign" value=""> </td>
+				</p>
+				<p><input type="submit" value="+Add" onclick="showInput();"><br/></p>
+				  <p><span id='display'></span></p>
+				</form>
+			</div>
+        <div id="TaskChoiceNav">
+				<ul>
+					<li class="TaskChoices">
+						<a href="/">OverView</a><!-- See contracts that are already exist -->
+					</li>
+					<li class="EditTask">
+						<a href="/">New Task</a><!-- Modify/edit a contract -->
+					</li>
+				</ul>
+			</div>
+	</body>
+</html>
