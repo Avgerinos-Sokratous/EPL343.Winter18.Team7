@@ -12,17 +12,30 @@
 <body>
 	<h1>Dear Customer</h1>
 	<ul>
-		<li><a href="#">Agenda</a></li>
-		<li><a href="custContractPage.html">Contract</a></li>
-		<li><a href="index.html">Log Out</a></li>
+		<li class = "menu"><a href="#">Agenda</a></li>
+		<li class = "menu"><a href="custContractPage.html">Contract</a></li>
+		<li class = "menu"><a href="index.html">Log Out</a></li>
 	</ul>
-	<div><p><br><br><br></p></div>
-	<div>
-		<ul >
-			<li class="emoji"> akikas01 &#x23F1 Time: <input type="time" name="usr_time"> &#x1F4C6 Date:<input type="date" name="bday"> 📓 Description: <input type="text" name="firstname"></li>
-			<li class="emoji"> mandre29  &#x23F1 Time:<input type="time" name="usr_time"> &#x1F4C6 Date:<input type="date" name="bday"> 📓 Description: <input type="text" name="firstname"></li>
-			<li class="emoji"> gkapi  &#x23F1 Time:<input type="time" name="usr_time"> &#x1F4C6 Date:<input type="date" name="bday"> 📓 Description: <input type="text" name="firstname"><li>
-		</ul>
-	</div>
-</body>
+	<h2>Appointments: </h2>
+	<ul id="appt_list" ></ul>
+	   <button onClick="newAppt()">New Appointment</button> <br/>
+	   <button onClick="apptSubmit()">Submit</button>
+	</body>
+	
+	<script type="text/javascript">
+	var id=1;
+	function newAppt() {
+		var myList = document.getElementById('appt_list');
+		var entry = document.createElement('li');
+
+		entry.innerHTML = '<div class="list0"><li id="list" class="emoji">'+ (id)+ ') Schedule your appointment:  &#x23F1 Time: <input type="time" name="appt_time"> &#x1F4C6 Date:<input type="date" name="appt_date"> &#x1F4D3 Description: <input type="text" name="appt_descr"></li></div>';
+		id+=1;
+		myList.appendChild(entry);
+		result.innerHTML=list.value;
+	}
+
+	function apptSubmit(){	
+		alert("Appointment Sumbited");
+	}
+	</script>
 </html>
