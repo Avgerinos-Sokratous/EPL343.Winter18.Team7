@@ -3,8 +3,11 @@
 	<head>
 		
 		<title>Tasks Page</title>
-		<meta name="author" content="your name" />
-		<meta name="description" content="" />
+		<meta charset="UTF-8">
+		<script language="JavaScript"> function showInput() {
+        document.getElementById('display').innerHTML = 
+                    document.getElementById("user_input").value;
+    }</script>
 		<!-- you should always add your stylesheet (css) in the head tag so that it starts loading before the page html is being displayed -->
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 	</head>
@@ -22,31 +25,26 @@
                     
 					<li class="TaskLog-out">
 						<a href="/">Log Out</a>
-					</li>
 				</ul>
+					</li>
 			</div>
 			<div id="TaskContent">
-				<h2>Tasks</h2>
+				<h2>New Task</h2>
+				<form>
 				<p>
-					<button type="button" onclick="alert('You have been assigned to complete Task 1')"><h1>Task1</h1></button>
+					<td><input type="text" id="TskAss" name="TaskAssign" value=""> </td>
 				</p>
-				<p>
-					<button type="button" onclick="alert('You have been assigned to complete Task 2')"><h1>Task2</h1></button>
-				</p>
-				<p>
-					<button type="button" onclick="alert('You have been assigned to complete Task 3')"><h1>Task3</h1></button>
-				</p>
-				<p>
-					 <button type="button" onclick="alert('You have been assigned to complete Task 4')"><h1>Task4</h1></button>
-				</p>
-				<p>
-					 <button type="button" onclick="alert('You have been assigned to complete Task 5')"><h1>Task5</h1></button>
-				</p>
+				<p><input type="submit" value="+Add" onclick="showInput();"><br/></p>
+				  <p><span id='display'></span></p>
+				</form>
 			</div>
         <div id="TaskChoiceNav">
 				<ul>
 					<li class="TaskChoices">
-						<a href="/">Outlook</a><!-- See contracts that are already exist -->
+						<a href="/">OverView</a><!-- See contracts that are already exist -->
+					</li>
+					<li class="EditTask">
+						<a href="/">New Task</a><!-- Modify/edit a contract -->
 					</li>
 				</ul>
 			</div>
