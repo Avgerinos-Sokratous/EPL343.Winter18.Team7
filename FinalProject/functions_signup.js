@@ -23,17 +23,22 @@ function authorizeForm(form0) {
 	var Password = document.forms["signupform"]["password"].value;
 	var CPassword = document.forms["signupform"]["password_confirm"].value;
 	var success=new Boolean(1);
-	if(!findname(Username)){success= Boolean(0);}
+	if(!findname(Username)){
+		success= Boolean(0);
+		return false;
+	}
 	if(!checkPassword(form0)){
-	success= Boolean(0);
+		success= Boolean(0);
+		return false;
 	}
  	localStorage.setItem(Username, Password);
 	localStorage.setItem("Email"+Username, Email);
 	localStorage.setItem("Name"+Username, Name);
 	localStorage.setItem("Surname"+Username, Surname);
 	localStorage.setItem("Telephone"+Username, Telephone);
-	if(success){alert("You have succesfully registered!!!");}
-    
+	if(success){
+		alert("You have succesfully registered!!!");
+	}
 }
 /**
  * @author akikas01
