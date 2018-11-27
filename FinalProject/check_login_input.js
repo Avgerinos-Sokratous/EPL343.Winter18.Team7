@@ -1,6 +1,17 @@
 /**
  * @author mandre29
  */
+function Manager(){ 
+  	localStorage.setItem("Manager", "12345678");
+  	localStorage.setItem("EmailManager","manager@cs.ucy.ac.cy");
+ 	localStorage.setItem("NameManager", "Anonymous");
+	localStorage.setItem("SurnameManager", "Anonymous");
+	localStorage.setItem("TelephoneManager", "12345677890");
+	localStorage.setItem("TypeManager","M");
+  	
+  	return true;
+  }
+
 function goToPage(form){ 
         var Username =form.username.value;
         var Passsword =form.password.value;
@@ -34,6 +45,7 @@ function checkInput(form){
 
 function checkNamePassword(username, password){
 	if(localStorage.getItem(username)== null){
+		Manager();
 			alert('Username does not exist!');
 			return false; 
 	}
