@@ -4,16 +4,16 @@
 	<meta charset="utf=8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>&#x1F465 Customer</title>
+	<title>SOCRATOUS</title>
 	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Monoton|Raleway" rel="stylesheet">
 	<link href="main.css" rel="stylesheet">
 </head>
 	
 <body>
-	<h1>&#x1F465 Dear Customer</h1>
+	<h1>Dear Customer</h1>
 	<ul>
-		<li class = "menu"><a href="#">&#x1F4C5 Agenda </a></li>
-		<li class = "menu"><a href="custContractPage.html">&#x1F4DD Contract </a></li>
+		<li class = "menu"><a href="#">Agenda </a></li>
+		<li class = "menu"><a href="custContractPage.html">Contract </a></li>
 		<li class = "menu"><a href="index.html">Log Out</a></li>
 	</ul>
 	<h2>Appointments: </h2>
@@ -28,7 +28,7 @@
 		var myList = document.getElementById('appt_list');
 		var entry = document.createElement('li');
 
-		entry.innerHTML = '<div class="list0"><li id="list" class="emoji">'+ (id)+ ') Schedule your appointment:  &#x23F1 Time: <input type="time" name="appt_time"> &#x1F4C6 Date:<input type="date" name="appt_date"> &#x1F4D3 Description: <input type="text" name="appt_descr"></li></div>';
+		entry.innerHTML = '<div class="list0"><li id="list" class="emoji">'+ (id)+ ') Schedule your appointment:  &#x23F1 : <input type="time" name="appt_time"> &#x1F4C6 :<input type="date" name="appt_date"> Description: <input type="text" name="appt_descr"></li></div>';
 		id+=1;
 		myList.appendChild(entry);
 		result.innerHTML=list.value;
