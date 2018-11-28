@@ -8,10 +8,39 @@
 	<title>SOCRATOUS</title>
 	<link href="https://fonts.googleapis.com/css?family=Fugaz+One|Monoton|Raleway" rel="stylesheet">
 	<link href="main.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+	<style>
+* {
+    box-sizing: border-box;
+}
+
+.carousel-item  {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.carousel-inner::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+</style>
+
 </head>
+<style>
+.mySlides {display:none;}
+</style>
 <body>
 	<h1>Socrates Socratous Electrical Services</h1>
 	<ul>
@@ -20,9 +49,8 @@
 		<li class = "menu"><a href="videos.html">Videos</a></li>
 		<li class = "menu"><a href="login.html">LogIn</a></li>
 	</ul>
-	<div id="demo" class="carousel slide" data-ride="carousel">
-
-	  <!-- Indicators -->
+	<div id="demo" class="carousel slide" data-ride="carousel">	
+	<!-- Indicators -->
 	  <ul class="carousel-indicators">
 		<li data-target="#demo" data-slide-to="0" class="active"></li>
 		<li data-target="#demo" data-slide-to="1"></li>
@@ -49,83 +77,163 @@
 		<li data-target="#demo" data-slide-to="22"></li>
 		<li data-target="#demo" data-slide-to="23"></li>
 	  </ul>
-	  
+	  <p>
 	  <!-- The slideshow -->
-	  <div class="carousel-inner">
-		<div class="carousel-item active">
-		  <img src="Img/store01.jpg" alt="Store" width="1100" height="500" class="center">
+	  <div class="row">
+	    <div class="column">
+		  <img class="mySlides" src="Img/store01.jpg" alt="Store" style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/store02.jpg" alt="Store" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/store02.jpg" alt="Store" style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work01.jpg" alt="Work" width="1100" height="500" class="center">
+		 <div class="column">
+		  <img class="mySlides" src="Img/work01.jpg" alt="Work" style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work02.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work02.jpg" alt="Work"  style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work03.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work03.jpg" alt="Work"  style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work04.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work04.jpg" alt="Work"  style="width:50%"">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work05.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work05.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work06.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work06.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work07.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work07.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work08.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work08.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work09.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work09.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work10.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work10.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work11.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work11.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work12.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work12.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work13.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work13.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work14.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work14.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work15.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work15.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work16.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work16.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work17.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work17.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work18.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work18.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work19.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work19.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work20.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work20.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work21.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work21.jpg" alt="Work"  style="width:50%">
 		</div>
-		<div class="carousel-item">
-		  <img src="Img/work22.jpg" alt="Work" width="1100" height="500" class="center">
+		<div class="column">
+		  <img class="mySlides" src="Img/work22.jpg" alt="Work"  style="width:50%">
 		</div>
+	</div>
+	 <button class="w3-button w3-deep-orange w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-deep-orange w3-display-right" onclick="plusDivs(1)">&#10095;</button>
 	  </div>
 	  
+	   <!-- The slideshow -->
+	  <div class="carousel-inner">
+	    <div class="carousel-item">
+		  <img src="Img/store01.jpg" alt="Store" style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/store02.jpg" alt="Store" style="width:100%">
+		</div>
+		 <div class="carousel-item">
+		  <img src="Img/work01.jpg" alt="Work" style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work02.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work03.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work04.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work05.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work06.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work07.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work08.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work09.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work10.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work11.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work12.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work13.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work14.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work15.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work16.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work17.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work18.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work19.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img  src="Img/work20.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work21.jpg" alt="Work"  style="width:100%">
+		</div>
+		<div class="carousel-item">
+		  <img src="Img/work22.jpg" alt="Work"  style="width:100%">
+		</div>
+	</div>
+	  </div>
+	  </p>
 	  <!-- Left and right controls -->
 	  <a class="carousel-control-prev" href="#demo" data-slide="prev">
 		<span class="carousel-control-prev-icon"></span>
@@ -134,5 +242,24 @@
 		<span class="carousel-control-next-icon"></span>
 	  </a>
 	</div>
+	<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";   
+}
+</script>
 </body>
 </html>
