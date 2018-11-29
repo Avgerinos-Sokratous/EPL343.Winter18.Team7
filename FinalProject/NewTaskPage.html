@@ -38,16 +38,16 @@
 				<p>
 					<td><input type="text" id="TskAss" name="TaskAssign" value=""> </td>
 				</p>
-				<p><input type="submit" value="+Add" onclick="showInput();"><br/></p>
+				<p><input type="submit" formaction="ManagerTasksPage.html"  value="+Add" onclick="href= 'ManagerTasksPage.html;"><br/></p><!--"showInput();"-->
 				  <p><span id='display'></span></p>
 				</form>
 			</div>
         <div id="TaskChoiceNav">
 				<ul>
-					<li class="menu">
+					<li class="TaskChoices">
 						<a href="ManagerTasksPage.html">OverView</a><!-- See contracts that are already exist -->
 					</li>
-					<li class="menu">
+					<li class="EditTask">
 						<a href="NewTaskPage.html">New Task</a><!-- Modify/edit a contract -->
 					</li>
 				</ul>
