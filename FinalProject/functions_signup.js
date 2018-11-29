@@ -1,7 +1,10 @@
 /**
  * @author mandre29
  */
+/*
+Checks the valididty of the data submited by user
 
+*/
 function checkPassword(form) {
 	if (form.password.value != form.password_confirm.value){
 		alert('Password is not the same as password confirm!');
@@ -13,6 +16,8 @@ function checkPassword(form) {
 }
 /**
  * @author akikas01
+ *
+ *Function for sign up form submitting account's details for a new account
  */
 function authorizeForm(form0) {
 	var Username =document.forms["signupform"]["username"].value;
@@ -43,6 +48,7 @@ function authorizeForm(form0) {
 /**
  * @author akikas01
  * @param {Object} un username
+ * Checks if a username already exists
  */
 function findname(un){
 	if(localStorage.getItem(un)!= null){
