@@ -18,14 +18,14 @@ function goToPage(form){
         var type=localStorage.getItem("Type"+Username);
        
         if(type==null){
-  	   window.location.replace("custAgenda.html");
+  	   window.open("custAgenda.html");
     	}
     	else{
     	   if(type=='E'){
-  		window.location.replace("empAgenda.html");
+  		window.open("empAgenda.html");
   	   }
    	   else{
- 		window.location.replace("manAgenda.html");
+ 		window.open("manAgenda.html");
            }
    	}
 }
