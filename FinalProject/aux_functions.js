@@ -1,4 +1,7 @@
-function changetype() {
+
+/*
+Changes type of account or shows the appropiate messages if account cannot be changed*/
+function changetype() {   
 	var Username =document.forms["changeAccount"]["Account's Username"].value;
 	if(localStorage.getItem(Username)== null) {
 		alert("Username does not exist");
@@ -15,7 +18,8 @@ function changetype() {
 		return;
 	}
   }
-
+/*
+Creates the Manager's profile*/
   function Manager(){ 
   	localStorage.setItem("Manager", "12345678");
   	localStorage.setItem("EmailManager","manager@cs.ucy.ac.cy");
