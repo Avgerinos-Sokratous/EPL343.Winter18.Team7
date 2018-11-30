@@ -14,25 +14,26 @@
 	<ul>
 		<li class = "menu"><a href="manAgenda.html">Agenda</a></li>
 		<li class = "menu"><a href="ManagerContractPage.html">Contract</a></li>
-		<li class = "menu"><a href="ManagerTasksPage.html">Tasks</a></li>
+		<li class = "menu"><a href="#">Tasks</a></li>
 		<li class = "menu"><a href="index.html">Log Out</a></li>
 	</ul>
-		<div>
-			 <div id="TaskPer">
-				<h2><strong>Tasks Perspective</strong></h2>
-			</div>
 			<div id="TaskContent">
-				<h2>New Task</h2>
-				<form>
+				<h2>Tasks</h2>
 				<p>
-					<textarea rows="8" cols="43" name="comment"></textarea>
+					<input type="radio" name="Tsk1" value=""><button type="button" onclick="location.href='TaskSubmit2.html'"><h2>Task1</h2></button>
 				</p>
-				<p><input type="submit" formaction="AddTask.html"  value="+Add" onclick="href= 'AddTask.html;"><br/></p><!--"showInput();"-->
-				  <p><span id='display'></span></p>
-				</form>
+				<p>
+					<input type="radio" name="Tsk1" value=""><button type="button" onclick="location.href='TaskSubmit2.html'"><h2>Task2</h2></button>
+				</p>
 			</div>
         <div id="TaskChoiceNav">
 				<ul>
+                    <li class="menu">
+						<a href="ManagerTasksPage.html">Remove Task</a>	<!-- Create new contract -->
+                        </li>
+					<li class="menu">
+						<a href="AddNoMoreTask.html">New Task</a>	<!-- Create new contract -->
+					</li>
 				</ul>
 			</div>
 	</body>
