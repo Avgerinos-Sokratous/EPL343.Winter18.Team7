@@ -1,5 +1,7 @@
 # EPL343.Winter18.Team7
 
+In order to go to the main page you have to open 'index.html' file
+
 Accounts Functionalities
 
 You can create a new account through Sign Up form. When a new account is created, its type is Customer by default. Only Manager account can change the type of accounts from Customer to Employee.
